@@ -1,18 +1,18 @@
-.a-class {
+.odd {
     background-color: #dd7878;
     font-family: "Verdana", "DejaVu Sans", sans-serif;
 }
 
-.cool-class {
+.larger-font {
     font-size: 24px
 }
 
-#id-one {
+#two {
     color: #1e66f5;
     font-size: 36px;
 }
 
-#id-two {
+#four {
     background-color: #40a02b;
     font-size: 24px;
     font-weight: bold;
