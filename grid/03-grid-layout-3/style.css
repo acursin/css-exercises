@@ -7,7 +7,7 @@
   text-align: center;
 
   display: grid;
-  grid-template: 2fr 1fr 15fr 1fr / 1fr 4fr;
+  grid-template-columns: 1fr 4fr;
   gap: 4px;
 }
 
@@ -22,21 +22,20 @@
 .header {
   background-color: #393f4d;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
 }
 
 .logo {
-  display: grid;
-  justify-content: start;
+  justify-self: start;
 }
 
 .menu ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  list-style-type: none;
+  list-style: none;
 }
 
 .menu ul,
@@ -47,14 +46,14 @@
 .sidebar {
   background-color: #C50208;
 
-  display: grid;
   grid-row: 2 / 4;
+  display: grid;
   gap: 50px;
 }
 
 .sidebar div {
   display: grid;
-  place-content: center;
+  align-items: center;
 }
 
 .sidebar .photo {
@@ -75,15 +74,12 @@
 
 .nav {
   background-color: #C50208;
-  display: grid;
-  align-items: center;
 }
 
 .nav ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   list-style: none;
-  align-items: center;
 }
 
 .nav ul li {
@@ -97,7 +93,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
-  grid-column: 2;
 }
 
 .article p {
@@ -119,6 +114,8 @@
   color: black;
   font-weight: normal;
   font-size: 14px;
+
+  padding: 5px;
 }
 
 .card .title {
